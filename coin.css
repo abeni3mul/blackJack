@@ -1,0 +1,33 @@
+.coin {
+	display: flex;
+	gap: 20px;
+	/* background-color: gray; */
+	border: none;
+	background-image: "./asset/coin-100.png"; /* Make the background transparent */
+	border: none; /* Remove the border */
+	padding: 0; /* Remove padding */
+}
+
+#infoBox {
+	position: fixed;
+	bottom: 80px; /* Adjust the distance from the bottom */
+	/* right: 0; */
+
+	border: 1px solid black;
+	padding: 10px;
+	background-color: lightgray;
+	z-index: 1000;
+}
+
+#betButton {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+}
+
+#betButton button {
+	background: transparent;
+	border: none;
+	padding: 0;
+}

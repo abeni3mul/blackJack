@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Black Jack</title>
+		<link rel="stylesheet" href="blackjack.css" />
+		<link rel="stylesheet" href="exit.css" />
+		<link rel="stylesheet" href="buttons.css" />
+		<link rel="stylesheet" href="coin.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+		/>
+		<link rel="stylesheet" href="background.css" />
+		<!-- <link rel="stylesheet" href="background.css" /> -->
+		<script src="blackjack.js" defer></script>
+		<button class="glowing-btn">
+			<span class="glowing-txt"
+				>BLA<span class="faulty-letter">CK-J</span>ACK</span
+			>
+		</button>
+		<br />
+	</head>
+
+	<body>
+		<div class="lines">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="button-container"></div>
+		<h2 class="label">Dealer: <span id="dealer-sum"></span></h2>
+		<div id="dealer-cards">
+			<img id="hidden" src="./cards/BACK.png" />
+		</div>
+
+		<h2 class="label">PLAYER: <span id="your-sum"></span></h2>
+		<div id="your-cards"></div>
+
+		<br />
+		<div class="container">
+			<a class="button" id="start" style="--color: #6eff3e">
+				<span></span>
+				START
+			</a>
+			<a class="button" id="hit" id href="#" style="--color: #1e9bff">
+				<span></span>
+				HIT
+			</a>
+			<a class="button" id="stay" href="#" style="--color: #f97316">
+				<span></span>
+				STAY
+			</a>
+			<a class="button" id="double" href="#" style="--color: #800080">
+				<span></span>
+				DOUBLE
+			</a>
+			<a class="button" id="restart" style="--color: #ff1867">
+				<span></span>
+				RESTART
+			</a>
+			<a
+				class="button"
+				id="exit"
+				href="../homePage.html"
+				style="--color: #ff0000"
+			>
+				<span></span>
+				EXIT
+			</a>
+			<audio id="sound" src="./asset/hit.mp3"></audio>
+		</div>
+
+		<p class="label" id="results"></p>
+		<!-- <div class="coin">
+			<button>
+				<img src="./asset/coin-100.png" alt="coin" />
+			</button>
+		</div> -->
+		<div id="infoBox">
+			<p>Balance: <span id="balance"></span> $</p>
+			<p>Bet Amount: <span id="betAmount">0</span> $</p>
+		</div>
+
+		<div id="betButton">
+			<button onclick="placeBet(100)">
+				<img src="./asset/coin-100.png" alt="coin" />
+			</button>
+			<button>
+				<img src="./asset/coin-75.png" onclick="placeBet(75)" alt="coin" />
+			</button>
+			<button>
+				<img src="./asset/coin-50.png" onclick="placeBet(50)" alt="coin" />
+			</button>
+		</div>
+	</body>
+</html>
